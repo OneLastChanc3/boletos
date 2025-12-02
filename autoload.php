@@ -2,13 +2,13 @@
 
 spl_autoload_register(function ($class) {
 
-    // Reemplaza namespace con ruta real
     $class = str_replace('\\', '/', $class);
 
-    // Construye ruta absoluta
-    $file = __DIR__ . '/src/' . $class . '.php';
+    $file = __DIR__ . '/' . $class . '.php';
 
     if (file_exists($file)) {
         require_once $file;
+    } else {
+        echo "<b>NO SE ENCONTRO:</b> $file<br>";
     }
 });
