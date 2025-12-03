@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <?php include __DIR__ . '/../components/NavBar.php'; ?>
+        <?php include __DIR__ . '/../components/Header.php'; ?>
     </header>
     <?php include __DIR__ . '/../components/Carousel.php' ?>
 
@@ -36,7 +36,7 @@
     </div>
 
     <div>
-        <?php include __DIR__ . '/../layouts/footer.php'; ?>
+        <?php include __DIR__ . '/../components/Footer.php'; ?>
     </div>
 
 
