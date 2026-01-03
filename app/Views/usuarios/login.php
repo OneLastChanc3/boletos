@@ -1,31 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <div class="login">
-        <h1>Login</h1>
+    <title>Login & Registro</title>
 
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card shadow-lg" style="width: 380px;">
+        <div class="card-body">
+
+            <h3 class="text-center mb-4">Bienvenido</h3>
+
+            <!-- LOGIN -->
+            <form class="mb-3">
+                <h5 class="text-center">Iniciar Sesión</h5>
+
+                <div class="mb-3">
+                    <label class="form-label">Usuario</label>
+                    <input type="text" class="form-control" placeholder="Usuario">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" placeholder="Contraseña">
+                </div>
+
+                <button class="btn btn-primary w-100">
+                    Entrar
+                </button>
+            </form>
+
+            <hr>
+
+            <!-- REGISTRO -->
+            <form>
+                <h5 class="text-center">Registrarse</h5>
+
+                <div class="mb-3">
+                    <label class="form-label">Usuario</label>
+                    <input type="text" class="form-control" placeholder="Nuevo usuario">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" placeholder="correo@ejemplo.com">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" placeholder="Contraseña">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Confirmar contraseña</label>
+                    <input type="password" class="form-control" placeholder="Confirmar contraseña">
+                </div>
+
+                <button class="btn btn-success w-100">
+                    Crear Cuenta
+                </button>
+            </form>
+
+        </div>
     </div>
-    
-        <form action="autenticacion.php" method="post">
-            <label for="username">
-                <i class="fas fa-user"></i>
-            </label>
-            <input type="text" name="username"
-            placeholder="Usuario" id="username" required>
-            <label for="password">
-                <i class="fas fa-lock"></i>
-            </label>
-            <input type="password" name="password"
-            placeholder="Contraseña" id="password" required>
-            <input type="submit" value="Acceder">
-        </form>
+</div>
+
 </body>
 </html>

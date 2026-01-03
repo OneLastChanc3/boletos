@@ -15,7 +15,8 @@
           <a class="nav-link active"  href="/boletos/public/productos">Boletos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="/boletos/public/login">Link</a>
+          <a class="nav-link active" href="/boletos/public/login">Login</a>  
+           
         </li>
       </ul>
      </div>
