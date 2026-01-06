@@ -32,38 +32,11 @@
                 <button class="btn btn-primary w-100">
                     Entrar
                 </button>
+                         <a class="nav-link active" href="/boletos/public/register">registrar</a>  
+
             </form>
 
             <hr>
-
-            <!-- REGISTRO -->
-            <form>
-                <h5 class="text-center">Registrarse</h5>
-
-                <div class="mb-3">
-                    <label class="form-label">Usuario</label>
-                    <input type="text" class="form-control" placeholder="Nuevo usuario">
-                </div>
-
-                <div class="mb-3">
-                    <label class="form-label">Correo electrónico</label>
-                    <input type="email" class="form-control" placeholder="correo@ejemplo.com">
-                </div>
-
-                <div class="mb-3">
-                    <label class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" placeholder="Contraseña">
-                </div>
-
-                <div class="mb-3">
-                    <label class="form-label">Confirmar contraseña</label>
-                    <input type="password" class="form-control" placeholder="Confirmar contraseña">
-                </div>
-
-                <button class="btn btn-success w-100">
-                    Crear Cuenta
-                </button>
-            </form>
 
         </div>
     </div>

@@ -19,7 +19,7 @@
         }
     </style>
 </head>
-<body>
+<body >
 
     <?php include __DIR__ . '/../components/Header.php'; ?>
 
