@@ -3,8 +3,13 @@
         <div class="card-body">
 
             <h3 class="text-center mb-4">Bienvenido</h3>
- 
- <form method="post">
+ <?php if (!empty($error)): ?>
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <?= htmlspecialchars($error) ?>
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+<?php endif; ?>
+ <form method="post" action="/boletos/public/register">
                 <h5 class="text-center">Registrarse</h5>
                 <div class="mb-3">
                     <label class="form-label">Usuario</label>
